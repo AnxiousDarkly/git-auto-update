@@ -5,6 +5,7 @@
   },
 
   "rules": {
-    "no-shadowed-variable": false
+    "no-shadowed-variable": false,
+    "no-console": false
   }
 }
