@@ -1,3 +1,10 @@
 {
-  "extends": "./node_modules/introvertuous-configurations/node/tsconfig.json"
+  "extends": "./node_modules/introvertuous-configurations/base/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["es2017"],
+    "target": "es6",
+    "baseUrl": "src",
+    "outDir": "dist"
+  }
 }
