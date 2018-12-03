@@ -5,6 +5,8 @@
     "lib": ["es2017"],
     "target": "es6",
     "baseUrl": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true
   }
 }
