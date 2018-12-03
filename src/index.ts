@@ -1,12 +1,12 @@
-import child_process from 'child_process';
 import findUp from 'find-up';
+import { exec } from 'lib/child_process';
 import Git from 'nodegit';
 
 export async function startAutomaticUpdate({ interval = 10000 } = {}) {
   const gitPath = await findUp('.git');
 
   if (gitPath == null) {
-    throw new Error('[git-auto-update] => No valid git path could be found...');
+    throw new Error('No valid path to .git could be found...');
   }
 
   setInterval(() => pull(gitPath), interval);
@@ -26,5 +26,5 @@ async function pull(gitPath: string) {
 
   await exec('git stash');
   await repository.mergeBranches('master', 'origin/master');
-  child_process.exec('npm install --package-lock=false');
+  await exec('npm install --package-lock=false');
 }
