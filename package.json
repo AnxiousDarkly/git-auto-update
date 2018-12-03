@@ -18,7 +18,8 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "echo '...testing...'"
   },
   "files": [
     "dist"
