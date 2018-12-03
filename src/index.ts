@@ -1,6 +1,6 @@
 import findUp from 'find-up';
-import { exec } from 'lib/child_process';
 import Git from 'nodegit';
+import { exec } from './lib/child_process';
 
 export async function startAutomaticUpdate({ interval = 10000 } = {}) {
   const gitPath = await findUp('.git');
