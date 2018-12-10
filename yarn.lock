@@ -2811,10 +2811,10 @@ into-stream@^4.0.0:
     from2 "^2.1.1"
     p-is-promise "^2.0.0"
 
-introvertuous-configurations@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/introvertuous-configurations/-/introvertuous-configurations-1.4.1.tgz#391fda12298d1f22a813b5cc6af30f1ff2b70044"
-  integrity sha512-7f1b8E44NsWIhH+3nDM6cQL+5ztRon05WaLyd0JSesMJUZAog2mFbDt1B9a5R0A5dmMPUaoFOUvEuSyqY3Xzcg==
+introvertuous-configurations@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/introvertuous-configurations/-/introvertuous-configurations-1.6.0.tgz#bd5619192921a3cdd6a92fff5ebff7ec52429a7f"
+  integrity sha512-VTqnendXotaCfYclKkkil3G0Yz09QjLbIwnromvHejrDuj28xMA62zkZ3NcaPhPwwLOxG/23c+6JuLkEZ24sAQ==
   dependencies:
     findup "^0.1.5"
     prettier "^1.15.2"
@@ -5169,6 +5169,11 @@ rimraf@2, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.
   integrity sha512-lreewLK/BlghmxtfH36YYVg1i8IAce4TI7oao75I1g245+6BctqTVQiBP3YUJ9C6DQOXJmkYR9X9fCLtCOJc5w==
   dependencies:
     glob "^7.0.5"
+
+rollup-plugin-analyzer@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-analyzer/-/rollup-plugin-analyzer-2.1.0.tgz#81d82cafb5a992fb99617112bc73d2313dd18259"
+  integrity sha512-lryo+3+O6/QF2uoDfszbg+YHuKD1OBuUfcd6kjsbZPKho0ksKCTDStFKrbBH6bF1Rpx/F2jdH6gvDsNbYaEK6g==
 
 rollup-plugin-auto-external@^2.0.0:
   version "2.0.0"
