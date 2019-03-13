@@ -26,5 +26,5 @@ async function pull(gitPath: string) {
 
   await exec('git stash');
   await repository.mergeBranches('master', 'origin/master');
-  await exec('npm install --package-lock=false');
+  // await exec('npm install --package-lock=false');
 }
