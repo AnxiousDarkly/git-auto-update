@@ -12,16 +12,16 @@ export async function startAutomaticUpdate({ interval = 10000 } = {}) {
   setInterval(() => pull(gitPath), interval);
 }
 
-const credentials = (url: any, userName: any) =>
-  Git.Cred.sshKeyFromAgent(userName);
+// const credentials = (url: any, userName: any) =>
+//  Git.Cred.sshKeyFromAgent(userName);
 
 async function pull(gitPath: string) {
   const repository = await Git.Repository.open(gitPath);
 
   await repository.fetchAll({
-    callbacks: {
-      credentials,
-    },
+    // callbacks: {
+    //  credentials,
+    // },
   });
 
   await exec('git stash');
